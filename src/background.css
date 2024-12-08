@@ -1,0 +1,750 @@
+body {
+	background-color: #a1b8ce;
+	display: flex;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+.sleigh {
+	font-size: 3rem;
+	color: transparent; /*set color to transparent to re-color emojis*/
+	text-shadow: 0 0 0 #ffffff; /*recolor emojis*/
+}
+.santa {
+	animation-name: up, across;
+	animation-duration: 10s, 6.5s;
+	animation-timing-function: ease-in-out, linear;
+	animation-iteration-count: 1, 1;
+	animation-delay: 3s, 5s;
+	position: absolute;
+	right: -80px;
+	top: 100px;
+	z-index: 2;
+	filter: blur(1px);
+}
+.santa1 {
+	animation-name: up, across;
+	animation-duration: 10s, 6.5s;
+	animation-timing-function: ease-in-out, linear;
+	animation-iteration-count: 1, 1;
+	animation-delay: 3.2s, 5.1s;
+	position: absolute;
+	right: -80px;
+	top: 100px;
+	z-index: 2;
+	filter: blur(1px);
+}
+.santa2 {
+	animation-name: up, across;
+	animation-duration: 10s, 6.5s;
+	animation-timing-function: ease-in-out, linear;
+	animation-iteration-count: 1, 1;
+	animation-delay: 3.4s, 5.2s;
+	position: absolute;
+	right: -80px;
+	top: 100px;
+	z-index: 2;
+	filter: blur(1px);
+}
+.santa3 {
+	animation-name: up, across;
+	animation-duration: 10s, 6.5s;
+	animation-timing-function: ease-in-out, linear;
+	animation-iteration-count: 1, 1;
+	animation-delay: 3.6s, 5.3s;
+	position: absolute;
+	right: -80px;
+	top: 100px;
+	z-index: 2;
+	filter: blur(1px);
+}
+.santa4 {
+	animation-name: up, across;
+	animation-duration: 10s, 6.5s;
+	animation-timing-function: ease-in-out, linear;
+	animation-iteration-count: 1, 1;
+	animation-delay: 3.8s, 5.4s;
+	position: absolute;
+	right: -80px;
+	top: 100px;
+	z-index: 2;
+	filter: blur(1px);
+}
+.santa5 {
+	animation-name: up, across;
+	animation-duration: 10s, 6.5s;
+	animation-timing-function: ease-in-out, linear;
+	animation-iteration-count: 1, 1;
+	animation-delay: 4s, 5.6s;
+	position: absolute;
+	right: -80px;
+	top: 100px;
+	z-index: 2;
+	filter: blur(1px);
+}
+
+.fa-star {
+	color: #ffffff;
+}
+
+.fa-sleigh {
+	color: #fcfcfc;
+	transform: scale(-1, 1);
+}
+
+@keyframes up {
+	0% {
+		transform: translateY(0%);
+	}
+
+	50% {
+		transform: translateY(100px);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes across {
+	from {
+		right: 0%;
+	}
+
+	to {
+		right: 100%;
+	}
+}
+
+.fa-snowflake {
+	color: #ecf2f8;
+}
+
+.snow {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+    left: 0;
+    pointer-events: none; 
+    z-index: 9999;
+}
+
+.snowflake {
+	animation-name: fall, shake;
+	animation-duration: 10s, 5s;
+	animation-timing-function: linear, ease-in-out;
+	animation-iteration-count: infinite, infinite;
+	position: absolute;
+	left: 200px;
+	z-index: 1;
+	filter: blur(0.5px);
+}
+
+.snowflake1 {
+	animation-name: fall, shake;
+	animation-duration: 10s, 3s;
+	animation-timing-function: linear, ease-in-out;
+	animation-iteration-count: infinite, infinite;
+	position: absolute;
+	left: 500px;
+	top: -100px;
+	animation-delay: 1s, 1s;
+	z-index: 7;
+	filter: blur(0.5px);
+}
+
+.snowflake2 {
+	animation-name: fall, shake;
+	animation-duration: 8s, 5s;
+	animation-timing-function: linear, ease-in-out;
+	animation-iteration-count: infinite, infinite;
+	position: absolute;
+	left: 20px;
+	top: -100px;
+	animation-delay: 2s, 2s;
+	z-index: 7;
+	filter: blur(0.5px);
+}
+
+.snowflake3 {
+	animation-name: fall, shake;
+	animation-duration: 9s, 5s;
+	animation-timing-function: linear, ease-in-out;
+	animation-iteration-count: infinite, infinite;
+	position: absolute;
+	right: 170px;
+	top: -100px;
+	animation-delay: 3s, 5s;
+	z-index: 5;
+	filter: blur(0.7px);
+}
+
+.snowflake4 {
+	animation-name: fall, shake;
+	animation-duration: 15s, 5s;
+	animation-timing-function: linear, ease-in-out;
+	animation-iteration-count: infinite, infinite;
+	position: absolute;
+	right: 430px;
+	top: -100px;
+	animation-delay: 4s, 4s;
+	z-index: 5;
+}
+
+.snowflake5 {
+	animation-name: fall, shake;
+	animation-duration: 15s, 4s;
+	animation-timing-function: linear, ease-in-out;
+	animation-iteration-count: infinite, infinite;
+	position: absolute;
+	left: 500px;
+	top: -100px;
+	animation-delay: 6s, 2s;
+	font-size: 2rem;
+	z-index: 6;
+	filter: blur(0.5px);
+}
+
+.snowflake6 {
+	animation-name: fall, shake;
+	animation-duration: 12s, 5s;
+	animation-timing-function: linear, ease-in-out;
+	animation-iteration-count: infinite, infinite;
+	position: absolute;
+	left: 75px;
+	top: -100px;
+	animation-delay: 3.2s, 2s;
+	font-size: 2rem;
+	z-index: 6;
+}
+
+.snowflake7 {
+	animation-name: fall, shake;
+	animation-duration: 11s, 5s;
+	animation-timing-function: linear, ease-in-out;
+	animation-iteration-count: infinite, infinite;
+	position: absolute;
+	left: 650px;
+	top: -100px;
+	animation-delay: 7.2s, 1s;
+	z-index: 7;
+}
+
+.snowflake8 {
+	animation-name: fall, shake;
+	animation-duration: 12s, 4s;
+	animation-timing-function: linear, ease-in-out;
+	animation-iteration-count: infinite, infinite;
+	position: absolute;
+	left: 820px;
+	top: -100px;
+	animation-delay: 4s, 2s;
+	font-size: 2rem;
+	z-index: 5;
+	filter: blur(0.5px);
+}
+
+.snowflake9 {
+	animation-name: fall, shake;
+	animation-duration: 12s, 4s;
+	animation-timing-function: linear, ease-in-out;
+	animation-iteration-count: infinite, infinite;
+	position: absolute;
+	left: 170px;
+	top: -100px;
+	animation-delay: 5s, 2s;
+	font-size: 2rem;
+	z-index: 5;
+	filter: blur(0.3px);
+}
+
+.snowflake10 {
+	animation-name: fall, shake;
+	animation-duration: 15s, 9s;
+	animation-timing-function: linear, ease-in-out;
+	animation-iteration-count: infinite, infinite;
+	position: absolute;
+	left: 350px;
+	top: -100px;
+	animation-delay: 2.7s, 2s;
+	font-size: 3rem;
+	z-index: 7;
+}
+
+.snowflake11 {
+	animation-name: fall, shake;
+	animation-duration: 12s, 7s;
+	animation-timing-function: linear, ease-in-out;
+	animation-iteration-count: infinite, infinite;
+	position: absolute;
+	right: 400px;
+	top: -100px;
+	animation-delay: 0.5s, 2s;
+	font-size: 3rem;
+	z-index: 7;
+}
+
+.snowflake12 {
+	/*small*/
+	animation-name: fall, shake;
+	animation-duration: 12s, 5s;
+	animation-timing-function: linear, ease-in-out;
+	animation-iteration-count: infinite, infinite;
+	position: absolute;
+	left: 470px;
+	top: -100px;
+	animation-delay: 5s, 2s;
+	z-index: 7;
+	filter: blur(0.9px);
+}
+
+.snowflake13 {
+	/*small*/
+	animation-name: fall, shake;
+	animation-duration: 10s, 5s;
+	animation-timing-function: linear, ease-in-out;
+	animation-iteration-count: infinite, infinite;
+	position: absolute;
+	right: 220px;
+	top: -100px;
+	animation-delay: 1s, 2s;
+	z-index: 7;
+	filter: blur(0.6px);
+}
+
+.snowflake14 {
+	/*small*/
+	animation-name: fall, shake;
+	animation-duration: 9s, 4s;
+	animation-timing-function: linear, ease-in-out;
+	animation-iteration-count: infinite, infinite;
+	position: absolute;
+	right: 140px;
+	top: -100px;
+	animation-delay: 2s, 2s;
+	z-index: 7;
+	filter: blur(0.5px);
+}
+
+@keyframes fall {
+	0% {
+		top: -10%;
+	}
+
+	100% {
+		top: 100%;
+	}
+}
+
+@keyframes shake {
+	0% {
+		transform: translatex(0);
+	}
+	50% {
+		transform: translatex(50px);
+	}
+	100% {
+		transform: translatex(0);
+	}
+}
+
+.mountains {
+	width: 100%;
+}
+
+.mt1 {
+	position: absolute;
+	content: "";
+	left: 100px;
+	bottom: 0;
+	border-top: 0px solid transparent;
+	border-right: 150px solid transparent;
+	border-left: 150px solid transparent;
+	border-bottom: 300px solid #0b364f;
+	z-index: 3;
+} /*the bottom border is the only thing we see for the mts, so we give it a color.
+ 300px is the height of the mt. All other borders should be transparent the width of the other borders will determine the angle of the triangle.*/
+
+.mtsnow1 {
+	position: absolute;
+	content: "";
+	left: -50px;
+	bottom: -100px;
+	border-top: 0px solid transparent;
+	border-right: 50px solid transparent;
+	border-left: 50px solid transparent;
+	border-bottom: 100px solid #c1cfd7;
+}
+
+.snow-peak-1a {
+	/*sharp snow edge*/
+	position: absolute;
+	content: "";
+	bottom: -130px;
+	left: -45px;
+	border-top: 30px solid #c1cfd7;
+	border-right: 25px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-left: 25px solid transparent;
+}
+
+.snow-peak-1b {
+	position: absolute;
+	content: "";
+	bottom: -130px;
+	left: -7px;
+	border-top: 30px solid #c1cfd7;
+	border-right: 25px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-left: 25px solid transparent;
+}
+
+.mt2 {
+	position: absolute;
+	content: "";
+	left: -20px;
+	bottom: 0;
+	border-top: 0px solid transparent;
+	border-right: 150px solid transparent;
+	border-left: 150px solid transparent;
+	border-bottom: 200px solid #094669;
+	z-index: 6;
+}
+
+.snow2 {
+	position: absolute;
+	content: "";
+	left: -75px;
+	bottom: -98px;
+	border-top: 0px solid transparent;
+	border-right: 75px solid transparent;
+	border-left: 75px solid transparent;
+	border-bottom: 100px solid #e4e8eb;
+}
+
+.snow-peak-2a {
+	position: absolute;
+	content: "";
+	bottom: -110px;
+	left: -60px;
+	border-top: 20px solid #e4e8eb;
+	border-right: 25px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-left: 25px solid transparent;
+}
+
+.snow-peak-2b {
+	position: absolute;
+	content: "";
+	bottom: -120px;
+	left: -25px;
+	border-top: 30px solid #e4e8eb;
+	border-right: 25px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-left: 25px solid transparent;
+}
+
+.snow-peak-2c {
+	position: absolute;
+	content: "";
+	bottom: -110px;
+	right: -60px;
+	border-top: 20px solid #e4e8eb;
+	border-right: 25px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-left: 25px solid transparent;
+}
+
+.mt3 {
+	position: absolute;
+	content: "";
+	left: 280px;
+	bottom: 0;
+	border-top: 0px solid transparent;
+	border-right: 150px solid transparent;
+	border-left: 150px solid transparent;
+	border-bottom: 175px solid #094669;
+	z-index: 6;
+}
+
+.snow3 {
+	position: absolute;
+	content: "";
+	left: -70px;
+	bottom: -80px;
+	border-top: 0px solid transparent;
+	border-right: 70px solid transparent;
+	border-left: 70px solid transparent;
+	border-bottom: 90px solid #e4e8eb;
+}
+
+.snow-peak-3a {
+	position: absolute;
+	content: "";
+	bottom: -100px;
+	left: -60px;
+	border-top: 30px solid #e4e8eb;
+	border-right: 25px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-left: 25px solid transparent;
+}
+
+.snow-peak-3b {
+	position: absolute;
+	content: "";
+	bottom: -100px;
+	left: -20px;
+	border-top: 30px solid #e4e8eb;
+	border-right: 25px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-left: 25px solid transparent;
+}
+
+.snow-peak-3c {
+	position: absolute;
+	content: "";
+	bottom: -100px;
+	right: -20px;
+	border-top: 30px solid #e4e8eb;
+	border-right: 25px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-left: 25px solid transparent;
+}
+
+.snow-peak-3d {
+	position: absolute;
+	content: "";
+	bottom: -100px;
+	right: -60px;
+	border-top: 30px solid #e4e8eb;
+	border-right: 25px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-left: 25px solid transparent;
+}
+
+.mt4 {
+	position: absolute;
+	content: "";
+	left: 800px;
+	bottom: 0;
+	border-top: 0px solid transparent;
+	border-right: 150px solid transparent;
+	border-left: 150px solid transparent;
+	border-bottom: 250px solid #0b364f;
+	z-index: 3;
+}
+
+.snow4 {
+	position: absolute;
+	content: "";
+	left: -47px;
+	bottom: -75px;
+	border-top: 0px solid transparent;
+	border-right: 47px solid transparent;
+	border-left: 47px solid transparent;
+	border-bottom: 80px solid #c1cfd7;
+}
+
+.snow-peak-4a {
+	/*sharp snow edge*/
+	position: absolute;
+	content: "";
+	bottom: -100px;
+	left: -45px;
+	border-top: 30px solid #c1cfd7;
+	border-right: 25px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-left: 25px solid transparent;
+
+} /* the sharp snow edge an is INVERTED triangle, so we want to see the the top border,not bottom. 
+Top border should have a color. Other borders should be transparent*/
+
+.snow-peak-4b {
+	position: absolute;
+	content: "";
+	bottom: -100px;
+	left: -7px;
+	border-top: 30px solid #c1cfd7;
+	border-right: 25px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-left: 25px solid transparent;
+}
+
+.mt5 {
+	position: absolute;
+	content: "";
+	left: 500px;
+	bottom: 0;
+	border-top: 0px solid transparent;
+	border-right: 200px solid transparent;
+	border-left: 200px solid transparent;
+	border-bottom: 150px solid #094669;
+	z-index: 6;
+}
+
+.snow5 {
+	position: absolute;
+	content: "";
+	left: -100px;
+	bottom: -75px;
+	border-top: 0px solid transparent;
+	border-right: 100px solid transparent;
+	border-left: 100px solid transparent;
+	border-bottom: 75px solid #e4e8eb;
+}
+
+.snow-peak-5a {
+	position: absolute;
+	content: "";
+	bottom: -95px;
+	left: -60px;
+	border-top: 20px solid #e4e8eb;
+	border-right: 25px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-left: 25px solid transparent;
+}
+
+.snow-peak-5b {
+	position: absolute;
+	content: "";
+	bottom: -100px;
+	left: -25px;
+	border-top: 30px solid #e4e8eb;
+	border-right: 25px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-left: 25px solid transparent;
+}
+
+.snow-peak-5c {
+	position: absolute;
+	content: "";
+	bottom: -95px;
+	right: -60px;
+	border-top: 20px solid #e4e8eb;
+	border-right: 25px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-left: 25px solid transparent;
+}
+
+.mt6 {
+	position: absolute;
+	content: "";
+	left: 950px;
+	bottom: 0;
+	border-top: 0px solid transparent;
+	border-right: 150px solid transparent;
+	border-left: 150px solid transparent;
+	border-bottom: 175px solid #094669;
+	z-index: 6;
+}
+
+.snow6 {
+	position: absolute;
+	content: "";
+	left: -70px;
+	bottom: -80px;
+	border-top: 0px solid transparent;
+	border-right: 70px solid transparent;
+	border-left: 70px solid transparent;
+	border-bottom: 90px solid #e4e8eb;
+}
+
+.snow-peak-6a {
+	position: absolute;
+	content: "";
+	bottom: -100px;
+	left: -60px;
+	border-top: 30px solid #e4e8eb;
+	border-right: 25px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-left: 25px solid transparent;
+}
+
+.snow-peak-6b {
+	position: absolute;
+	content: "";
+	bottom: -100px;
+	left: -20px;
+	border-top: 30px solid #e4e8eb;
+	border-right: 25px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-left: 25px solid transparent;
+}
+
+.snow-peak-6c {
+	position: absolute;
+	content: "";
+	bottom: -100px;
+	right: -20px;
+	border-top: 30px solid #e4e8eb;
+	border-right: 25px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-left: 25px solid transparent;
+}
+
+.snow-peak-6d {
+	position: absolute;
+	content: "";
+	bottom: -100px;
+	right: -60px;
+	border-top: 30px solid #e4e8eb;
+	border-right: 25px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-left: 25px solid transparent;
+}
+
+.main-page {
+    position: relative;
+    z-index: 2; /* Above snowflakes */
+}
+
+.santa-cart {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+  }
+  
+  .cart-path {
+	position: absolute;
+	width: 200px; /* Diameter of the circle */
+	height: 200px; /* Diameter of the circle */
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: rotate 10s linear infinite;
+  }
+  
+  .santa-cart-icon {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 3rem;
+	color: #ffffff;
+  }
+  
+  .cart-path {
+	position: absolute;
+	width: 200px; /* Diameter of the circle */
+	height: 200px; /* Diameter of the circle */
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: rotate 10s linear infinite;
+  }
+  
+  .santa-cart-icon {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 3rem;
+	color: #ffffff;
+  }
+  
+
+  
